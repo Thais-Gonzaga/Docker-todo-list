@@ -68,5 +68,5 @@ jobs:
         uses: ./.github/actions/store-evaluation
         with:
           evaluation-data: ${{ steps.jest_eval.outputs.result }}
-          environment: staging
+          environment: production
           token: ${{ secrets.GITHUB_TOKEN }}
