@@ -1,1 +1,6 @@
-
+FROM node:14
+EXPOSE 3001
+ADD node_modules.tar.gz /todo-app/back-end/
+COPY ./ /todo-app/back-end/
+RUN cd /todo-app/back-end/ && npm install 
+CMD ["npm", "start"]
