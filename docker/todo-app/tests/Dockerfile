@@ -4,5 +4,5 @@ EXPOSE 3000
 ADD node_modules.tar.gz /todo-app/tests/
 COPY ./ /todo-app/tests/
 RUN npm install 
-CMD ["npm", "start"]
+CMD ["npm", "test"]
 
